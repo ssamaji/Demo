@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="24206" started-at="2017-03-13T12:23:45Z" finished-at="2017-03-13T12:24:09Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="24206" started-at="2017-03-13T12:23:45Z" finished-at="2017-03-13T12:24:09Z">
+      <class name="practice.Upload">
+        <test-method status="PASS" signature="initApplication()[pri:0, instance:practice.Upload@19defdc]" name="initApplication" is-config="true" duration-ms="5177" started-at="2017-03-13T17:53:45Z" finished-at="2017-03-13T17:53:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initApplication -->
+        <test-method status="PASS" signature="preCondition(java.lang.reflect.Method)[pri:0, instance:practice.Upload@19defdc]" name="preCondition" is-config="true" duration-ms="16444" started-at="2017-03-13T17:53:50Z" finished-at="2017-03-13T17:54:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void practice.Upload.upload()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="FAIL" signature="upload()[pri:0, instance:practice.Upload@19defdc]" name="upload" duration-ms="343" started-at="2017-03-13T17:54:07Z" finished-at="2017-03-13T17:54:07Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Timed out after 0 seconds waiting for visibility of [[FirefoxDriver: firefox on WINDOWS (dff0a11a-8c73-4e77-b3ea-d1f95d3588d0)] -> id: menu_pim_Configuration]
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'swati-PC', ip: '192.168.184.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: dff0a11a-8c73-4e77-b3ea-d1f95d3588d0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 0 seconds waiting for visibility of [[FirefoxDriver: firefox on WINDOWS (dff0a11a-8c73-4e77-b3ea-d1f95d3588d0)] -> id: menu_pim_Configuration]
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'swati-PC', ip: '192.168.184.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: dff0a11a-8c73-4e77-b3ea-d1f95d3588d0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at common.BasePage.waitTillElementIsVisible(BasePage.java:26)
+	at pom.HomePage.moveToConfi(HomePage.java:99)
+	at practice.Upload.upload(Upload.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- upload -->
+        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:practice.Upload@19defdc]" name="postCondition" is-config="true" duration-ms="843" started-at="2017-03-13T17:54:07Z" finished-at="2017-03-13T17:54:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=upload status=FAILURE method=Upload.upload()[pri:0, instance:practice.Upload@19defdc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method status="PASS" signature="cleanApplication()[pri:0, instance:practice.Upload@19defdc]" name="cleanApplication" is-config="true" duration-ms="1341" started-at="2017-03-13T17:54:08Z" finished-at="2017-03-13T17:54:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanApplication -->
+      </class> <!-- practice.Upload -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
